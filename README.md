@@ -1,11 +1,11 @@
- Banking Management System
+# Banking Management System
 
- Project Overview
+## Project Overview
 The Banking Management System is a core Java-based project designed to manage banking operations. It provides functionalities for creating savings accounts, depositing and withdrawing funds, viewing account balances, and displaying all accounts. The application follows Object-Oriented Programming principles to ensure scalability and maintainability.
 
 ---
 
- Features
+## Features
 - Create a savings account with account ID, holder name, balance, and interest rate.
 - Deposit funds into an account.
 - Withdraw funds with validation for insufficient balance.
@@ -14,32 +14,32 @@ The Banking Management System is a core Java-based project designed to manage ba
 
 ---
 
- Technology Stack
-- Programming Language: Java
-- IDE: Any Java-compatible IDE (Eclipse, IntelliJ IDEA, etc.)
-- Tools: Scanner for user input, Exception handling for error scenarios
+## Technology Stack
+- **Programming Language**: Java
+- **IDE**: Any Java-compatible IDE (Eclipse, IntelliJ IDEA, etc.)
+- **Tools**: Scanner for user input, Exception handling for error scenarios
 
 ---
 
- Class Diagram
+## Class Diagram
 
- Diagram Explanation
-1. Bank:
+### Diagram Explanation
+1. **Bank**:
    - Manages all accounts.
    - Has methods to create accounts, deposit, withdraw, and display accounts.
 
-2. Account:
+2. **Account**:
    - Parent class for different account types.
    - Contains common attributes: account ID, holder name, balance.
    - Methods include deposit, withdraw, and display balance.
 
-3. SavingsAccount:
+3. **SavingsAccount**:
    - Inherits from `Account`.
    - Adds an attribute for interest rate.
 
- Diagram Representation
+### Diagram Representation
 
-
+```
 -------------------          -------------------
 |      Bank       |          |     Account     |
 -------------------          -------------------
@@ -57,12 +57,12 @@ The Banking Management System is a core Java-based project designed to manage ba
                             ---------------------
                             | + interestRate : double |
                             ---------------------
-
+```
 
 ---
 
- Project Structure
-
+## Project Structure
+```
 BankingManagementSystem/
   |- src/
       |- Bank.java
@@ -71,50 +71,50 @@ BankingManagementSystem/
       |- BankApplication.java
   |- README.md
   |- .gitignore
-
+```
 
 ---
 
- Setup Instructions
+## Setup Instructions
 1. Clone the repository from GitHub.
-   bash
+   ```bash
    git clone https://github.com/yourusername/BankingManagementSystem.git
-   
+   ```
 2. Open the project in your favorite Java IDE.
 3. Compile the project files:
-   bash
+   ```bash
    javac BankApplication.java
-   
+   ```
 4. Run the project:
-   bash
+   ```bash
    java BankApplication
-   
+   ```
 
 ---
 
- Usage Guide
-- Creating an Account:
+## Usage Guide
+- **Creating an Account**:
   - Select option `1` from the menu.
   - Enter the required details: account ID, name, balance, and interest rate.
 
-- Depositing Funds:
+- **Depositing Funds**:
   - Select option `2`.
   - Provide the account ID and deposit amount.
 
-- Withdrawing Funds:
+- **Withdrawing Funds**:
   - Select option `3`.
   - Provide the account ID and withdrawal amount. Insufficient balance will trigger an exception.
 
-- Displaying Account Balance:
+- **Displaying Account Balance**:
   - Select option `5`.
   - Provide the account ID to view its balance.
 
-- Viewing All Accounts:
+- **Viewing All Accounts**:
   - Select option `4` to list all created accounts with their details.
 
 ---
 
- Future Enhancements
+## Future Enhancements
 - Add support for current accounts.
 - Implement file-based persistence to save account data across sessions.
 - Add a graphical user interface (GUI) for enhanced usability.
@@ -122,7 +122,7 @@ BankingManagementSystem/
 
 ---
 
- Contributing
+## Contributing
 1. Fork the repository.
 2. Create a new branch for your feature/bug fix.
 3. Commit your changes with a descriptive message.
@@ -130,6 +130,6 @@ BankingManagementSystem/
 
 ---
 
- License
+## License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
