@@ -50,37 +50,7 @@ The Banking Management System is a core Java-based project designed to manage ba
 ![diagram (5)](https://github.com/user-attachments/assets/008a093d-fde5-4c15-9462-640a71d44fcd)
 
 
-```
--------------------          -------------------
-|      Bank       |          |     Account     |
--------------------          -------------------
-| - accounts: List<Account> |      + accountId : int |
-| + createSavingsAccount()   |      + holderName : String |
-| + findAccount()            |      + balance : double |
-| + displayAllAccounts()     |      + deposit() |
--------------------          |      + withdraw() |
-                             |      + displayBalance() |
-                             -------------------
-                                      ^
-                                      |
-                            ---------------------
-                            |   SavingsAccount   |
-                            ---------------------
-                            | + interestRate : double |
-                            ---------------------
-                                      ^
-                                      |
-                            -----------------------
-                            |   InsufficientFundsException |
-                            -----------------------
-                                      ^
-                                      |
-                            ---------------------
-                            |   BankApplication  |
-                            ---------------------
-```
 
----
 
 ## Project Structure
 ```
