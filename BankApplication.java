@@ -14,9 +14,9 @@ public class BankApplication {
             System.out.println("5. Display Balance");
             System.out.println("6. Exit");
             System.out.print("Enter your choice: ");
-            while (!scanner.hasNextInt()) { // Validate integer input
+            while (!scanner.hasNextInt()) {
                 System.out.println("Invalid input. Please enter a number.");
-                scanner.next(); // Clear invalid input
+                scanner.next(); 
             }
             choice = scanner.nextInt();
 
