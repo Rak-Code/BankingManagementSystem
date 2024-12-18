@@ -37,6 +37,14 @@ The Banking Management System is a core Java-based project designed to manage ba
    - Inherits from `Account`.
    - Adds an attribute for interest rate.
 
+4. **BankApplication**:
+   - Entry point of the application.
+   - Handles user input and coordinates with `Bank` and `Account` classes.
+
+5. **InsufficientFundsException**:
+   - Custom exception class.
+   - Handles errors when attempting to withdraw more funds than available.
+
 ### Diagram Representation
 
 ```
@@ -57,6 +65,16 @@ The Banking Management System is a core Java-based project designed to manage ba
                             ---------------------
                             | + interestRate : double |
                             ---------------------
+                                      ^
+                                      |
+                            -----------------------
+                            |   InsufficientFundsException |
+                            -----------------------
+                                      ^
+                                      |
+                            ---------------------
+                            |   BankApplication  |
+                            ---------------------
 ```
 
 ---
@@ -68,6 +86,7 @@ BankingManagementSystem/
       |- Bank.java
       |- Account.java
       |- SavingsAccount.java
+      |- InsufficientFundsException.java
       |- BankApplication.java
   |- README.md
   |- .gitignore
