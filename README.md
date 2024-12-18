@@ -47,6 +47,9 @@ The Banking Management System is a core Java-based project designed to manage ba
 
 ### Diagram Representation
 
+![diagram (5)](https://github.com/user-attachments/assets/008a093d-fde5-4c15-9462-640a71d44fcd)
+
+
 ```
 -------------------          -------------------
 |      Bank       |          |     Account     |
